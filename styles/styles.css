@@ -35,6 +35,12 @@ img {
   -webkit-box-shadow: -2px 2px 20px 0px #0000001f;
           box-shadow: -2px 2px 20px 0px #0000001f;
   font-size: .9rem;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta:hover {
+  background-color: #9d2a73;
 }
 
 a {
@@ -97,6 +103,10 @@ header .container nav .logo {
 header .container nav .cta-header {
   background-color: white;
   color: black;
+}
+
+header .container nav .cta-header:hover {
+  background-color: #e0e0e0;
 }
 
 header .container .hero {
@@ -218,6 +228,17 @@ footer .container {
           flex-direction: column;
 }
 
+footer .container a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .container a:hover {
+  color: #8d8d8d;
+}
+
 footer .container .footer-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,6 +293,10 @@ footer .container .footer-info .footer-1 ul li .contact p {
           flex: 1;
 }
 
+footer .container .footer-info .footer-1 ul li .contact a {
+  font-size: 1.2rem;
+}
+
 footer .container .footer-info .footer-2 ul, footer .container .footer-info .footer-3 ul {
   list-style: none;
 }
@@ -281,19 +306,13 @@ footer .container .footer-info .footer-2 ul li, footer .container .footer-info .
 }
 
 footer .container .footer-info .footer-2 ul li a, footer .container .footer-info .footer-3 ul li a {
-  text-decoration: none;
   font-size: 1.2rem;
-  color: white;
 }
 
 footer .container .footer-info .footer-4 {
   margin-top: 80px;
   text-align: center;
   font-size: 40px;
-}
-
-footer .container .footer-info .footer-4 a {
-  color: white;
 }
 
 footer .container .footer-copyright {

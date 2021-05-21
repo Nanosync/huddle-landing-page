@@ -39,6 +39,11 @@ img {
   font-weight: 700;
   box-shadow: -2px 2px 20px 0px #0000001f;
   font-size: .9rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: hsl(322, 58%, 39%);
+  }
 }
 
 a {
@@ -83,6 +88,10 @@ header {
       .cta-header {
         background-color: white;
         color: black;
+
+        &:hover {
+          background-color: #e0e0e0;
+        }
       }
     }
 
@@ -189,6 +198,16 @@ footer {
     display: flex;
     flex-direction: column;
 
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #8d8d8d;
+      }
+    }
+
     .footer-info {
       display: flex;
       flex-direction: column;
@@ -221,6 +240,10 @@ footer {
                 margin-left: 20px;
                 flex: 1;
               }
+
+              a {
+                font-size: 1.2rem;
+              }
             }
           }
         }
@@ -232,9 +255,7 @@ footer {
           li {
             margin-top: 18px;
             a {
-              text-decoration: none;
               font-size: 1.2rem;
-              color: white;
             }
           }
         }
@@ -244,10 +265,6 @@ footer {
         margin-top: 80px;
         text-align: center;
         font-size: 40px;
-
-        a {
-          color: white;
-        }
       }
     }
 
